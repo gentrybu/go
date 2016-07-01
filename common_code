@@ -1,1 +1,21 @@
-// go
+/* go
+
+channel
+buffer channels like mailboxes in Erlang
+
+don't communicate by sharing memory, share memory by communicating  (not a mem blob with locks or mutexes or cond var, protect para / 
+but use channel to pass data back and forth)
+
+function that returns a channel
+* also as a handle on a service
+
+fan-in function - multiplexer
+* than can restore sequencing if needed (use Message struct) - wiat channel
+
+select stmt - a control structure unique to concurrency
+  looks like a switch, each case is a communication
+  will block if no default case
+
+https://blog.golang.org/concurrency-is-not-parallelism
+
+*/
